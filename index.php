@@ -263,7 +263,7 @@
         <?php edit_post_link('Editer', ' &#124; ', ''); ?>
       </p>
       <section class= "post" id="post-<?php the_ID(); ?>">
-        <article class= "post_content">
+        <article class= "col-6 row post_content">
           <?php the_content(); ?>
         </article>
       </section>
