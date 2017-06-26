@@ -263,7 +263,7 @@
         <?php edit_post_link('Editer', ' &#124; ', ''); ?>
       </p>
       <section class= "post" id="post-<?php the_ID(); ?>">
-        <article class= "post_content">
+        <article class= "row col-6 post_content">
           <?php the_content(); ?>
         </article>
       </section>
@@ -271,32 +271,6 @@
 
     <?php endwhile; ?>
   <?php endif; ?>
-  <article>
-    <h3>La vr d'oculus</h3>
-    <article class="articleBlog">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-      <p>non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
-    </article>
-    <article class="imgBlog">
-      <img id="vr" class="vr" onmouseover="altImg(this)" onmouseout="nonAltImg(this)" src="http://img.clubic.com/07731899-photo-oculus-rift-development-kit-2.jpg" alt="un jolie casque vr" width="200" height="200">
-      <p id="altimg">
-
-      </p>
-    </article>
-    <script type="text/javascript">
-    //affichage alt
-    var altIMG = document.getElementById("vr").alt;
-    function altImg() {
-
-        document.getElementById("altimg").innerHTML += altIMG ;
-    }
-
-    function nonAltImg() {
-        document.getElementById("altimg").innerHTML = "" ;
-    }
-    </script>
-  </article>
 </section>
 </main>
 <?php get_footer(); ?> <!-- ouvrir header,php -->
