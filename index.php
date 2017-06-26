@@ -263,7 +263,7 @@
         <?php edit_post_link('Editer', ' &#124; ', ''); ?>
       </p>
       <section class= "post" id="post-<?php the_ID(); ?>">
-        <article class= "row col-6 post_content">
+        <article class= "post_content">
           <?php the_content(); ?>
         </article>
       </section>
@@ -273,4 +273,4 @@
   <?php endif; ?>
 </section>
 </main>
-<?php get_footer(); ?> <!-- ouvrir header,php -->
+<?php get_footer(); ?> <!-- ouvrir footer.php -->
